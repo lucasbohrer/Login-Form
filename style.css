@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-image: url(img/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: #ccc;
+    opacity: 0.6;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px;
+    border-radius: 7px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    bottom: -2px;
+    left: 2px;
+    border-radius: 7px;
+    background: #E54;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    height: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.input-field input::placeholder {
+    color: #000;
+}
+
+form input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3 ease;
+}
+
+form input[type="submit"]:hover {
+    background: #56a7f2;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: #000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .social-field.twitter {
+    background-color:#56a7f2;
+}
+
+.footer .social-field.facebook {
+    background-color:#2a5298;
+}
+
+.footer .social-field.google {
+    background-color: #000;
+}
